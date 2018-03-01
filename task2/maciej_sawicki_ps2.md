@@ -1,3 +1,5 @@
+# Maciej Sawicki
+
 # Sprawozdanie - Zadanie 2
 
 ### 1. Polecenie wywołania SQL*Loader pozwalające załadować dane na serwer bazy danych wraz z plikiem
