@@ -28,44 +28,44 @@ CREATE TABLE Worker
   FOREIGN KEY (speciality_id) REFERENCES Speciality (id)
 );
 
-CREATE SEQUENCE generate_worker_id
+CREATE SEQUENCE worker_id_generator
   INCREMENT BY 1
   START WITH 1
   NOCYCLE;
 
-CREATE SEQUENCE generate_position_id
+CREATE SEQUENCE position_id_generator
   INCREMENT BY 1
   START WITH 1
   NOCYCLE;
 
-CREATE SEQUENCE generate_speciality_id
+CREATE SEQUENCE speciality_id_generator
   INCREMENT BY 1
   START WITH 1
   NOCYCLE;
 
--- table_migrator
-CREATE OR REPLACE PACKAGE table_migrator AS
+--------------------- task2 PACKAGE ----------------------------
+CREATE OR REPLACE PACKAGE task2 AS
   PROCEDURE migrate_tables;
 
   FUNCTION calculate_mean_salary(position_name Position.name%TYPE)
     RETURN NUMBER;
 END;
 
--- migrate_tables
-CREATE OR REPLACE PACKAGE BODY table_migrator
+--------------------- task2 PACKAGE IMPLEMENTATION ------------
+CREATE OR REPLACE PACKAGE BODY task2
 AS
   PROCEDURE migrate_tables AS
     BEGIN
       -- TEMP -> Position
       FOR i IN (SELECT DISTINCT t.POSITION
                 FROM TEMP t) LOOP
-        INSERT INTO Position VALUES (generate_position_id.nextval, i.POSITION);
+        INSERT INTO Position VALUES (position_id_generator.nextval, i.POSITION);
       END LOOP;
 
       -- TEMP -> Speciality
       FOR i IN (SELECT DISTINCT t.SPECIALITY
                 FROM TEMP t) LOOP
-        INSERT INTO Speciality VALUES (generate_speciality_id.nextval, i.SPECIALITY);
+        INSERT INTO Speciality VALUES (speciality_id_generator.nextval, i.SPECIALITY);
       END LOOP;
 
       -- TEMP -> Worker
@@ -80,7 +80,7 @@ AS
                   t.SPECIALITY
                 FROM TEMP t) LOOP
         INSERT INTO Worker
-        VALUES (generate_worker_id.nextval,
+        VALUES (worker_id_generator.nextval,
                 i.NAME,
                 i.SURNAME,
                 i.BIRTH,
@@ -98,9 +98,8 @@ AS
       EXCEPTION
       WHEN OTHERS
       THEN NULL;
-    END migrate_tables;
+    END;
 
-  -- calculate_mean_salary
   FUNCTION calculate_mean_salary(position_name Position.name%TYPE)
     RETURN NUMBER IS
     average NUMBER;
@@ -112,12 +111,32 @@ AS
             AND p.name = position_name;
       RETURN average;
     END;
-END table_migrator;
-
-CALL table_migrator.migrate_tables();
-
-DECLARE aa NUMBER;
-BEGIN
-  aa := table_migrator.calculate_mean_salary('Sales Associate');
-  dbms_output.Put_line(aa); --display
 END;
+
+CALL task2.migrate_tables();
+
+------------------  salary_guard TRIGGER  -----------------------
+CREATE OR REPLACE TRIGGER salary_guard
+  BEFORE UPDATE OF position_id, salary OR INSERT
+  ON Worker
+  FOR EACH ROW
+  DECLARE
+    PRAGMA AUTONOMOUS_TRANSACTION;
+    position_name  VARCHAR(100);
+    average_salary NUMBER;
+      salaryException EXCEPTION;
+  BEGIN
+    SELECT Position.name
+    INTO position_name
+    FROM Position
+    WHERE ID = :new.position_id;
+
+    average_salary := task2.calculate_mean_salary(position_name);
+    dbms_output.put_line('average ' || average_salary);
+    IF (average_salary * 1.25) < :new.salary
+    THEN
+      RAISE salaryException;
+    END IF;
+  END;
+
+ALTER TRIGGER salary_guard ENABLE;
