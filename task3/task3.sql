@@ -18,10 +18,11 @@ CREATE TABLE w_lokalizacja (
 );
 
 CREATE TABLE f_sprzedaz (
-  id               NUMBER NOT NULL ENABLE,
-  id_w_czas        NUMBER,
-  id_w_kategoria   NUMBER,
-  id_w_lokalizacja NUMBER,
+  id                 NUMBER NOT NULL ENABLE,
+  id_w_czas          NUMBER,
+  id_w_kategoria     NUMBER,
+  id_w_lokalizacja   NUMBER,
+  liczba_sprzedanych NUMBER,
   PRIMARY KEY (id),
   FOREIGN KEY (id_w_czas) REFERENCES w_czas (id),
   FOREIGN KEY (id_w_kategoria) REFERENCES w_kategoria (id),
@@ -92,4 +93,5 @@ CREATE OR REPLACE TRIGGER t_id_sprzedaz
     :new.id := sek_sprzedaz.nextval;
   END;
 
-INSERT INTO f_sprzedaz (id_w_czas, id_w_kategoria, id_w_lokalizacja)
+INSERT INTO f_sprzedaz (id_w_czas, id_w_kategoria, id_w_lokalizacja, liczba_sprzedanych)
+    SELECT ....
