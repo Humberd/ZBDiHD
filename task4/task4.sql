@@ -199,4 +199,9 @@ INSERT INTO f_sprzedaz (id_czas, id_produkt, id_panstwo, kwota)
         AND k.PANSTWO = pn.ID_PANSTWA
         AND pn.NAZWA = wpa.nazwa
         AND mgn.ID_PRODUKTU = p.ID_PRODUKTU
-  GROUP BY wc.id, wp.id, wpa.id
+  GROUP BY wc.id, wp.id, wpa.id;
+
+SELECT * FROM w_czas;
+SELECT * FROM w_produkt;
+SELECT * FROM w_panstwo;
+SELECT * FROM f_sprzedaz;
