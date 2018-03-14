@@ -178,3 +178,25 @@ INSERT INTO w_czas (rok)
         UNION
         SELECT EXTRACT(YEAR FROM p.DATA_OD)
         FROM PROMOCJA p);
+
+INSERT INTO f_sprzedaz (id_czas, id_produkt, id_panstwo, kwota)
+  SELECT
+    wc.id,
+    wp.id,
+    wpa.id,
+    SUM(sz.ILOSC * mgn.CENA)
+  FROM w_czas wc, w_produkt wp, w_panstwo wpa, ZAMOWIENIE z,
+    SZCZEGOLY_ZAMOWIENIA sz,
+    PRODUKT p,
+    KLIENT k,
+    PANSTWO pn,
+    MAGAZYN mgn
+  WHERE EXTRACT(YEAR FROM z.DATA_ZAMOWIENIA) = wc.rok
+        AND z.ID_ZAMOWIENIA = sz.ID_ZAMOWIENIA
+        AND sz.ID_PRODUKTU = p.ID_PRODUKTU
+        AND p.NAZWA = wp.nazwa
+        AND z.ID_KLIENTA = k.ID_KLIENTA
+        AND k.PANSTWO = pn.ID_PANSTWA
+        AND pn.NAZWA = wpa.nazwa
+        AND mgn.ID_PRODUKTU = p.ID_PRODUKTU
+  GROUP BY wc.id, wp.id, wpa.id
