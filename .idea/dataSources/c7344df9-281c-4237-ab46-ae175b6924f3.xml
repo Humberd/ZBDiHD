@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="MACIEJ_SAWICKI">
       <ObjectId>1353</ObjectId>
-      <IntrospectionTimestamp>2018-03-07.18:18:33</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-03-28.18:29:43</IntrospectionTimestamp>
       <CreatedTimestamp>2018-03-01.23:24:31</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:18:33</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -1381,619 +1381,485 @@
     <schema id="459" parent="1" name="PAWEL_TUREL">
       <ObjectId>1481</ObjectId>
     </schema>
-    <sequence id="460" parent="2" name="SEK_CZAS">
-      <ObjectId>324384</ObjectId>
-      <CreatedTimestamp>2018-03-07.18:12:47</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:12:47</ModifiedTimestamp>
-      <SequenceIdentity>1</SequenceIdentity>
-    </sequence>
-    <sequence id="461" parent="2" name="SEK_KATEGORIA">
-      <ObjectId>324343</ObjectId>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <SequenceIdentity>1</SequenceIdentity>
-    </sequence>
-    <sequence id="462" parent="2" name="SEK_LOKALIZACJA">
-      <ObjectId>324358</ObjectId>
-      <CreatedTimestamp>2018-03-07.18:08:20</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:08:20</ModifiedTimestamp>
-      <SequenceIdentity>1</SequenceIdentity>
-    </sequence>
-    <sequence id="463" parent="2" name="SEK_SPRZEDAZ">
-      <ObjectId>324425</ObjectId>
-      <CreatedTimestamp>2018-03-07.18:18:33</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:18:33</ModifiedTimestamp>
-      <SequenceIdentity>1</SequenceIdentity>
-    </sequence>
-    <table id="464" parent="2" name="AUTHOR">
-      <ObjectId>324263</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <schema id="460" parent="1" name="TEST">
+      <ObjectId>1482</ObjectId>
+    </schema>
+    <schema id="461" parent="1" name="GABRIELA_ANTONOWICZ">
+      <ObjectId>1483</ObjectId>
+    </schema>
+    <schema id="462" parent="1" name="JULITA_BZOWSKA">
+      <ObjectId>1484</ObjectId>
+    </schema>
+    <schema id="463" parent="1" name="KLAUDIA_CHILINSKA">
+      <ObjectId>1485</ObjectId>
+    </schema>
+    <schema id="464" parent="1" name="MARTA_DROJEWSKA">
+      <ObjectId>1486</ObjectId>
+    </schema>
+    <schema id="465" parent="1" name="PAULINA_DRYL">
+      <ObjectId>1487</ObjectId>
+    </schema>
+    <schema id="466" parent="1" name="PATRYCJA_GRZEGORCZYK">
+      <ObjectId>1488</ObjectId>
+    </schema>
+    <schema id="467" parent="1" name="PAWEL_GRZESZCZUK">
+      <ObjectId>1489</ObjectId>
+    </schema>
+    <schema id="468" parent="1" name="MAGDALENA_HOLOWIENKO">
+      <ObjectId>1490</ObjectId>
+    </schema>
+    <schema id="469" parent="1" name="NATALIA_HANUSIAK">
+      <ObjectId>1491</ObjectId>
+    </schema>
+    <schema id="470" parent="1" name="JOANNA_JURGUC">
+      <ObjectId>1492</ObjectId>
+    </schema>
+    <schema id="471" parent="1" name="ADRIAN_KLOCZKO">
+      <ObjectId>1493</ObjectId>
+    </schema>
+    <schema id="472" parent="1" name="PAULINA_NEJMAN">
+      <ObjectId>1494</ObjectId>
+    </schema>
+    <schema id="473" parent="1" name="ROBERT_NIEWIAROWSKI">
+      <ObjectId>1495</ObjectId>
+    </schema>
+    <schema id="474" parent="1" name="PAWEL_CIECIERSKI">
+      <ObjectId>1496</ObjectId>
+    </schema>
+    <schema id="475" parent="1" name="KATARZYNA_PAWELCZYK">
+      <ObjectId>1497</ObjectId>
+    </schema>
+    <schema id="476" parent="1" name="NATALIA_PERKOWSKA">
+      <ObjectId>1498</ObjectId>
+    </schema>
+    <schema id="477" parent="1" name="KATARZYNA_PYPCZYNSKA">
+      <ObjectId>1499</ObjectId>
+    </schema>
+    <schema id="478" parent="1" name="PAULINA_SZEWCZUK">
+      <ObjectId>1500</ObjectId>
+    </schema>
+    <schema id="479" parent="1" name="KAROLINA_SZKLARZEWSKA">
+      <ObjectId>1501</ObjectId>
+    </schema>
+    <schema id="480" parent="1" name="BEATA_WINALOWICZ">
+      <ObjectId>1502</ObjectId>
+    </schema>
+    <schema id="481" parent="1" name="DOMINIKA_ZLOTKOWSKA">
+      <ObjectId>1503</ObjectId>
+    </schema>
+    <schema id="482" parent="1" name="ALDO_KONI">
+      <ObjectId>1504</ObjectId>
+    </schema>
+    <schema id="483" parent="1" name="LARA_BADARACCO">
+      <ObjectId>1505</ObjectId>
+    </schema>
+    <schema id="484" parent="1" name="ANASTASIA_HANULIAK">
+      <ObjectId>1506</ObjectId>
+    </schema>
+    <schema id="485" parent="1" name="TASNIME_AYED">
+      <ObjectId>1507</ObjectId>
+    </schema>
+    <schema id="486" parent="1" name="JUSTYNA_BOROWSKA2">
+      <ObjectId>1508</ObjectId>
+    </schema>
+    <schema id="487" parent="1" name="JUAN_LOPEZ">
+      <ObjectId>1509</ObjectId>
+    </schema>
+    <schema id="488" parent="1" name="TEST1">
+      <ObjectId>1510</ObjectId>
+    </schema>
+    <schema id="489" parent="1" name="MERVE_ERDINC">
+      <ObjectId>1511</ObjectId>
+    </schema>
+    <schema id="490" parent="1" name="TEST2">
+      <ObjectId>1513</ObjectId>
+    </schema>
+    <table id="491" parent="2" name="AUTHOR">
+      <ObjectId>343217</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="465" parent="2" name="BOOKAUTHOR">
-      <ObjectId>324269</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <table id="492" parent="2" name="BOOKAUTHOR">
+      <ObjectId>343223</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="466" parent="2" name="BOOKS">
-      <ObjectId>324265</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <table id="493" parent="2" name="BOOKS">
+      <ObjectId>343219</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="467" parent="2" name="CUSTOMERS">
-      <ObjectId>324257</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <table id="494" parent="2" name="CUSTOMERS">
+      <ObjectId>343211</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="468" parent="2" name="F_SPRZEDAZ">
-      <ObjectId>324341</ObjectId>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:18:33</ModifiedTimestamp>
+    <table id="495" parent="2" name="ORDERITEMS">
+      <ObjectId>343221</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="469" parent="2" name="ORDERITEMS">
-      <ObjectId>324267</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <table id="496" parent="2" name="ORDERS">
+      <ObjectId>343213</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="470" parent="2" name="ORDERS">
-      <ObjectId>324259</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <table id="497" parent="2" name="PROMOTION">
+      <ObjectId>343225</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="471" parent="2" name="PROMOTION">
-      <ObjectId>324271</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <table id="498" parent="2" name="PUBLISHER">
+      <ObjectId>343215</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="472" parent="2" name="PUBLISHER">
-      <ObjectId>324261</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
-      <TemporaryPreserve>1</TemporaryPreserve>
-    </table>
-    <table id="473" parent="2" name="W_CZAS">
-      <ObjectId>324335</ObjectId>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:12:47</ModifiedTimestamp>
-      <TemporaryPreserve>1</TemporaryPreserve>
-    </table>
-    <table id="474" parent="2" name="W_KATEGORIA">
-      <ObjectId>324337</ObjectId>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <TemporaryPreserve>1</TemporaryPreserve>
-    </table>
-    <table id="475" parent="2" name="W_LOKALIZACJA">
-      <ObjectId>324339</ObjectId>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:08:20</ModifiedTimestamp>
-      <TemporaryPreserve>1</TemporaryPreserve>
-    </table>
-    <column id="476" parent="464" name="AUTHORID">
+    <column id="499" parent="491" name="AUTHORID">
       <Position>1</Position>
       <DataType>VARCHAR2(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="477" parent="464" name="LNAME">
+    <column id="500" parent="491" name="LNAME">
       <Position>2</Position>
       <DataType>VARCHAR2(10)|0</DataType>
     </column>
-    <column id="478" parent="464" name="FNAME">
+    <column id="501" parent="491" name="FNAME">
       <Position>3</Position>
       <DataType>VARCHAR2(10)|0</DataType>
     </column>
-    <index id="479" parent="464" name="SYS_C00205053">
-      <ObjectId>324264</ObjectId>
+    <index id="502" parent="491" name="SYS_C00224809">
+      <ObjectId>343218</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <CreatedTimestamp>2018-03-28.18:29:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>AUTHORID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="480" parent="464" name="SYS_C00205053">
+    <key id="503" parent="491" name="SYS_C00224809">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <ColNames>AUTHORID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00205053</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00224809</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="481" parent="465" name="ISBN">
+    <column id="504" parent="492" name="ISBN">
       <Position>1</Position>
       <DataType>VARCHAR2(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="482" parent="465" name="AUTHORID">
+    <column id="505" parent="492" name="AUTHORID">
       <Position>2</Position>
       <DataType>VARCHAR2(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="483" parent="465" name="BOOKAUTHOR_PK">
-      <ObjectId>324270</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <index id="506" parent="492" name="BOOKAUTHOR_PK">
+      <ObjectId>343224</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>ISBN
 AUTHORID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="484" parent="465" name="BOOKAUTHOR_PK">
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <key id="507" parent="492" name="BOOKAUTHOR_PK">
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <ColNames>ISBN
 AUTHORID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>BOOKAUTHOR_PK</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="485" parent="465" name="SYS_C00205062">
+    <foreign-key id="508" parent="492" name="SYS_C00224818">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <ColNames>ISBN</ColNames>
       <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
       <RefTableName>BOOKS</RefTableName>
-      <RefKeyName>SYS_C00205054</RefKeyName>
+      <RefKeyName>SYS_C00224810</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="486" parent="465" name="SYS_C00205063">
+    <foreign-key id="509" parent="492" name="SYS_C00224819">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <ColNames>AUTHORID</ColNames>
       <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
       <RefTableName>AUTHOR</RefTableName>
-      <RefKeyName>SYS_C00205053</RefKeyName>
+      <RefKeyName>SYS_C00224809</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="487" parent="466" name="ISBN">
+    <column id="510" parent="493" name="ISBN">
       <Position>1</Position>
       <DataType>VARCHAR2(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="488" parent="466" name="TITLE">
+    <column id="511" parent="493" name="TITLE">
       <Position>2</Position>
       <DataType>VARCHAR2(30)|0</DataType>
     </column>
-    <column id="489" parent="466" name="PUBDATE">
+    <column id="512" parent="493" name="PUBDATE">
       <Position>3</Position>
       <DataType>DATE|0</DataType>
     </column>
-    <column id="490" parent="466" name="PUBID">
+    <column id="513" parent="493" name="PUBID">
       <Position>4</Position>
       <DataType>NUMBER(2)|0</DataType>
     </column>
-    <column id="491" parent="466" name="COST">
+    <column id="514" parent="493" name="COST">
       <Position>5</Position>
       <DataType>NUMBER(5,2)|0</DataType>
     </column>
-    <column id="492" parent="466" name="RETAIL">
+    <column id="515" parent="493" name="RETAIL">
       <Position>6</Position>
       <DataType>NUMBER(5,2)|0</DataType>
     </column>
-    <column id="493" parent="466" name="CATEGORY">
+    <column id="516" parent="493" name="CATEGORY">
       <Position>7</Position>
       <DataType>VARCHAR2(12)|0</DataType>
     </column>
-    <index id="494" parent="466" name="SYS_C00205054">
-      <ObjectId>324266</ObjectId>
+    <index id="517" parent="493" name="SYS_C00224810">
+      <ObjectId>343220</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <CreatedTimestamp>2018-03-28.18:29:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>ISBN</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="495" parent="466" name="SYS_C00205054">
+    <key id="518" parent="493" name="SYS_C00224810">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <ColNames>ISBN</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00205054</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00224810</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="496" parent="466" name="SYS_C00205055">
+    <foreign-key id="519" parent="493" name="SYS_C00224811">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <ColNames>PUBID</ColNames>
       <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
       <RefTableName>PUBLISHER</RefTableName>
-      <RefKeyName>SYS_C00205052</RefKeyName>
+      <RefKeyName>SYS_C00224808</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="497" parent="467" name="CUSTOMER#">
+    <column id="520" parent="494" name="CUSTOMER#">
       <Position>1</Position>
       <DataType>NUMBER(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="498" parent="467" name="LASTNAME">
+    <column id="521" parent="494" name="LASTNAME">
       <Position>2</Position>
       <DataType>VARCHAR2(10)|0</DataType>
     </column>
-    <column id="499" parent="467" name="FIRSTNAME">
+    <column id="522" parent="494" name="FIRSTNAME">
       <Position>3</Position>
       <DataType>VARCHAR2(10)|0</DataType>
     </column>
-    <column id="500" parent="467" name="ADDRESS">
+    <column id="523" parent="494" name="ADDRESS">
       <Position>4</Position>
       <DataType>VARCHAR2(20)|0</DataType>
     </column>
-    <column id="501" parent="467" name="CITY">
+    <column id="524" parent="494" name="CITY">
       <Position>5</Position>
       <DataType>VARCHAR2(12)|0</DataType>
     </column>
-    <column id="502" parent="467" name="STATE">
+    <column id="525" parent="494" name="STATE">
       <Position>6</Position>
       <DataType>VARCHAR2(2)|0</DataType>
     </column>
-    <column id="503" parent="467" name="ZIP">
+    <column id="526" parent="494" name="ZIP">
       <Position>7</Position>
       <DataType>VARCHAR2(5)|0</DataType>
     </column>
-    <column id="504" parent="467" name="REFERRED">
+    <column id="527" parent="494" name="REFERRED">
       <Position>8</Position>
       <DataType>NUMBER(4)|0</DataType>
     </column>
-    <index id="505" parent="467" name="SYS_C00205049">
-      <ObjectId>324258</ObjectId>
+    <index id="528" parent="494" name="SYS_C00224805">
+      <ObjectId>343212</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <CreatedTimestamp>2018-03-28.18:29:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>CUSTOMER#</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="506" parent="467" name="SYS_C00205049">
+    <key id="529" parent="494" name="SYS_C00224805">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <ColNames>CUSTOMER#</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00205049</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00224805</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="507" parent="468" name="ID">
-      <Position>1</Position>
-      <DataType>NUMBER(*)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="508" parent="468" name="ID_W_CZAS">
-      <Position>2</Position>
-      <DataType>NUMBER(*)|0</DataType>
-    </column>
-    <column id="509" parent="468" name="ID_W_KATEGORIA">
-      <Position>3</Position>
-      <DataType>NUMBER(*)|0</DataType>
-    </column>
-    <column id="510" parent="468" name="ID_W_LOKALIZACJA">
-      <Position>4</Position>
-      <DataType>NUMBER(*)|0</DataType>
-    </column>
-    <index id="511" parent="468" name="SYS_C00205137">
-      <ObjectId>324342</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>ID</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="512" parent="468" name="SYS_C00205137">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <ColNames>ID</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00205137</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="513" parent="468" name="SYS_C00205138">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <ColNames>ID_W_CZAS</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>W_CZAS</RefTableName>
-      <RefKeyName>SYS_C00205129</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <foreign-key id="514" parent="468" name="SYS_C00205139">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <ColNames>ID_W_KATEGORIA</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>W_KATEGORIA</RefTableName>
-      <RefKeyName>SYS_C00205132</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <foreign-key id="515" parent="468" name="SYS_C00205140">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <ColNames>ID_W_LOKALIZACJA</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>W_LOKALIZACJA</RefTableName>
-      <RefKeyName>SYS_C00205135</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <trigger id="516" parent="468" name="T_ID_SPRZEDAZ">
-      <ObjectId>324426</ObjectId>
-      <DependsOnIds>324425</DependsOnIds>
-      <CreatedTimestamp>2018-03-07.18:18:33</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:18:33</ModifiedTimestamp>
-      <Events>I</Events>
-      <Turn>before-row</Turn>
-    </trigger>
-    <column id="517" parent="469" name="ORDER#">
+    <column id="530" parent="495" name="ORDER#">
       <Position>1</Position>
       <DataType>NUMBER(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="518" parent="469" name="ITEM#">
+    <column id="531" parent="495" name="ITEM#">
       <Position>2</Position>
       <DataType>NUMBER(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="519" parent="469" name="ISBN">
+    <column id="532" parent="495" name="ISBN">
       <Position>3</Position>
       <DataType>VARCHAR2(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="520" parent="469" name="QUANTITY">
+    <column id="533" parent="495" name="QUANTITY">
       <Position>4</Position>
       <DataType>NUMBER(3)|0</DataType>
     </column>
-    <index id="521" parent="469" name="ORDERITEMS_PK">
-      <ObjectId>324268</ObjectId>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <index id="534" parent="495" name="ORDERITEMS_PK">
+      <ObjectId>343222</ObjectId>
+      <CreatedTimestamp>2018-03-28.18:29:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>ORDER#
 ISBN</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="522" parent="469" name="ORDERITEMS_PK">
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+    <key id="535" parent="495" name="ORDERITEMS_PK">
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <ColNames>ORDER#
 ISBN</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
       <UnderlyingIndexName>ORDERITEMS_PK</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="523" parent="469" name="SYS_C00205059">
+    <foreign-key id="536" parent="495" name="SYS_C00224815">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <ColNames>ORDER#</ColNames>
       <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
       <RefTableName>ORDERS</RefTableName>
-      <RefKeyName>SYS_C00205050</RefKeyName>
+      <RefKeyName>SYS_C00224806</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <foreign-key id="524" parent="469" name="SYS_C00205060">
+    <foreign-key id="537" parent="495" name="SYS_C00224816">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:40</ModifiedTimestamp>
       <ColNames>ISBN</ColNames>
       <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
       <RefTableName>BOOKS</RefTableName>
-      <RefKeyName>SYS_C00205054</RefKeyName>
+      <RefKeyName>SYS_C00224810</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="525" parent="470" name="ORDER#">
+    <column id="538" parent="496" name="ORDER#">
       <Position>1</Position>
       <DataType>NUMBER(4)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="526" parent="470" name="CUSTOMER#">
+    <column id="539" parent="496" name="CUSTOMER#">
       <Position>2</Position>
       <DataType>NUMBER(4)|0</DataType>
     </column>
-    <column id="527" parent="470" name="ORDERDATE">
+    <column id="540" parent="496" name="ORDERDATE">
       <Position>3</Position>
       <DataType>DATE|0</DataType>
     </column>
-    <column id="528" parent="470" name="SHIPDATE">
+    <column id="541" parent="496" name="SHIPDATE">
       <Position>4</Position>
       <DataType>DATE|0</DataType>
     </column>
-    <column id="529" parent="470" name="SHIPSTREET">
+    <column id="542" parent="496" name="SHIPSTREET">
       <Position>5</Position>
       <DataType>VARCHAR2(18)|0</DataType>
     </column>
-    <column id="530" parent="470" name="SHIPCITY">
+    <column id="543" parent="496" name="SHIPCITY">
       <Position>6</Position>
       <DataType>VARCHAR2(15)|0</DataType>
     </column>
-    <column id="531" parent="470" name="SHIPSTATE">
+    <column id="544" parent="496" name="SHIPSTATE">
       <Position>7</Position>
       <DataType>VARCHAR2(2)|0</DataType>
     </column>
-    <column id="532" parent="470" name="SHIPZIP">
+    <column id="545" parent="496" name="SHIPZIP">
       <Position>8</Position>
       <DataType>VARCHAR2(5)|0</DataType>
     </column>
-    <index id="533" parent="470" name="SYS_C00205050">
-      <ObjectId>324260</ObjectId>
+    <index id="546" parent="496" name="SYS_C00224806">
+      <ObjectId>343214</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <CreatedTimestamp>2018-03-28.18:29:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>ORDER#</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="534" parent="470" name="SYS_C00205050">
+    <key id="547" parent="496" name="SYS_C00224806">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <ColNames>ORDER#</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00205050</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00224806</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="535" parent="470" name="SYS_C00205051">
+    <foreign-key id="548" parent="496" name="SYS_C00224807">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <ColNames>CUSTOMER#</ColNames>
       <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
       <RefTableName>CUSTOMERS</RefTableName>
-      <RefKeyName>SYS_C00205049</RefKeyName>
+      <RefKeyName>SYS_C00224805</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <column id="536" parent="471" name="GIFT">
+    <column id="549" parent="497" name="GIFT">
       <Position>1</Position>
       <DataType>VARCHAR2(15)|0</DataType>
     </column>
-    <column id="537" parent="471" name="MINRETAIL">
+    <column id="550" parent="497" name="MINRETAIL">
       <Position>2</Position>
       <DataType>NUMBER(5,2)|0</DataType>
     </column>
-    <column id="538" parent="471" name="MAXRETAIL">
+    <column id="551" parent="497" name="MAXRETAIL">
       <Position>3</Position>
       <DataType>NUMBER(5,2)|0</DataType>
     </column>
-    <column id="539" parent="472" name="PUBID">
+    <column id="552" parent="498" name="PUBID">
       <Position>1</Position>
       <DataType>NUMBER(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="540" parent="472" name="NAME">
+    <column id="553" parent="498" name="NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(23)|0</DataType>
     </column>
-    <column id="541" parent="472" name="CONTACT">
+    <column id="554" parent="498" name="CONTACT">
       <Position>3</Position>
       <DataType>VARCHAR2(15)|0</DataType>
     </column>
-    <column id="542" parent="472" name="PHONE">
+    <column id="555" parent="498" name="PHONE">
       <Position>4</Position>
       <DataType>VARCHAR2(12)|0</DataType>
     </column>
-    <index id="543" parent="472" name="SYS_C00205052">
-      <ObjectId>324262</ObjectId>
+    <index id="556" parent="498" name="SYS_C00224808">
+      <ObjectId>343216</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-07.17:53:03</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <CreatedTimestamp>2018-03-28.18:29:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
       <ColNames>PUBID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="544" parent="472" name="SYS_C00205052">
+    <key id="557" parent="498" name="SYS_C00224808">
       <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.17:53:03</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-03-28.18:29:39</ModifiedTimestamp>
       <ColNames>PUBID</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00205052</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00224808</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="545" parent="473" name="ID">
-      <Position>1</Position>
-      <DataType>NUMBER(*)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="546" parent="473" name="MIESIAC">
-      <Position>2</Position>
-      <DataType>NUMBER(*)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="547" parent="473" name="ROK">
-      <Position>3</Position>
-      <DataType>NUMBER(*)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="548" parent="473" name="SYS_C00205129">
-      <ObjectId>324336</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>ID</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="549" parent="473" name="SYS_C00205129">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <ColNames>ID</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00205129</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <trigger id="550" parent="473" name="T_ID_CZAS">
-      <ObjectId>324385</ObjectId>
-      <DependsOnIds>324384</DependsOnIds>
-      <CreatedTimestamp>2018-03-07.18:12:47</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:12:47</ModifiedTimestamp>
-      <Events>I</Events>
-      <Turn>before-row</Turn>
-    </trigger>
-    <column id="551" parent="474" name="ID">
-      <Position>1</Position>
-      <DataType>NUMBER(*)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="552" parent="474" name="NAZWA">
-      <Position>2</Position>
-      <DataType>VARCHAR2(100)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="553" parent="474" name="SYS_C00205132">
-      <ObjectId>324338</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>ID</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="554" parent="474" name="SYS_C00205132">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <ColNames>ID</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00205132</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <trigger id="555" parent="474" name="T_ID_KATEGORII">
-      <ObjectId>324344</ObjectId>
-      <DependsOnIds>324343</DependsOnIds>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <Events>I</Events>
-      <Turn>before-row</Turn>
-    </trigger>
-    <column id="556" parent="475" name="ID">
-      <Position>1</Position>
-      <DataType>NUMBER(*)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="557" parent="475" name="STAN">
-      <Position>2</Position>
-      <DataType>VARCHAR2(100)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="558" parent="475" name="SYS_C00205135">
-      <ObjectId>324340</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-03-07.18:04:35</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>ID</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="559" parent="475" name="SYS_C00205135">
-      <NameSurrogate>1</NameSurrogate>
-      <ModifiedTimestamp>2018-03-07.18:04:35</ModifiedTimestamp>
-      <ColNames>ID</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>SYS_C00205135</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <trigger id="560" parent="475" name="T_ID_LOKALIZACJI">
-      <ObjectId>324359</ObjectId>
-      <DependsOnIds>324358</DependsOnIds>
-      <CreatedTimestamp>2018-03-07.18:08:20</CreatedTimestamp>
-      <ModifiedTimestamp>2018-03-07.18:08:20</ModifiedTimestamp>
-      <Events>I</Events>
-      <Turn>before-row</Turn>
-    </trigger>
   </database-model>
 </dataSource>
