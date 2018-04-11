@@ -65,14 +65,54 @@ WHERE Rank = 1;
 SELECT
   c.CUSID,
   c.cus_name,
-  nvl(count(DISTINCT O.ORDER#), 0)            AS num_order,
-  nvl(count(P.PART#), 0)                      AS ind_pasrts,
+  nvl(count(DISTINCT O.ORDER#), 0)                                     AS num_order,
+  nvl(count(P.PART#), 0)                                               AS ind_pasrts,
   TO_CHAR(nvl(sum(D.QUOTED_PRICE * D.NUM_ORDERED), 0), 'L99G999D99MI') AS total
 FROM PART P
   JOIN ORDER_DETAILS D ON P.PART# = D.PART#
   JOIN T_ORDERS O ON O.ORDER# = D.ORDER#
   RIGHT JOIN CUSTOMER C ON C.CUSID = O.CUSID
 GROUP BY GROUPING SETS ((c.CUSID, c.cus_name))
-ORDER BY total DESC
+ORDER BY total DESC;
 
 --zad 6
+-- SELECT CUSID, CUS_NAME, CREDIT_LIMIT, available_credit
+SELECT
+  CUSID,
+  CUS_NAME,
+  TO_CHAR(CREDIT_LIMIT, 'L99G999D99MI') as CREDIT_LIMIT,
+  TO_CHAR(available_credit, 'L99G999D99MI') as available_credit
+FROM (
+  SELECT
+    CUSID,
+    CUS_NAME,
+    CREDIT_LIMIT,
+    available_credit,
+    total_ordered_per_customer,
+    RANK()
+    OVER (
+      ORDER BY total_ordered_per_customer DESC
+      ) AS Rank
+  FROM (
+    SELECT DISTINCT
+      C.CUSID,
+      C.CUS_NAME,
+      C.CREDIT_LIMIT,
+      C.CREDIT_LIMIT - C.BALANCE AS available_credit,
+      SUM(SUM(D.NUM_ORDERED))
+      OVER (
+        PARTITION BY C.CUSID
+        ORDER BY C.CUSID
+        )                        AS total_ordered_per_customer
+    FROM CUSTOMER C
+      JOIN T_ORDERS ORDER2 ON C.CUSID = ORDER2.CUSID
+      JOIN ORDER_DETAILS D ON ORDER2.ORDER# = D.ORDER#
+      JOIN PART P ON D.PART# = P.PART#
+    GROUP BY GROUPING SETS ((C.CUSID, C.CUS_NAME, C.CREDIT_LIMIT, C.BALANCE, P.PART#))
+    ORDER BY total_ordered_per_customer DESC
+  )
+  ORDER BY RANK ASC, CREDIT_LIMIT DESC
+)
+WHERE Rank = 1
+
+-- WHERE Rank = 1
