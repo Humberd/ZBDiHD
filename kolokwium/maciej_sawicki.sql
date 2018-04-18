@@ -19,14 +19,13 @@ GROUP BY p.ID_PRODUKTU, p.NAZWA;
 
 -- Zad. 3B
 SELECT
-  ID_PANSTWA,
   NAZWA,
   SUMA,
   Cwiartka,
   ROUND(RATIO_TO_REPORT(SUMA)
         OVER (
           PARTITION BY Cwiartka
-          ), 3) * 100
+          ), 3) * 100 || '%' as Udzial
 FROM (
   SELECT
     p.ID_PANSTWA,
@@ -40,4 +39,29 @@ FROM (
     JOIN SKLEP S on p.ID_PANSTWA = S.PANSTWO
     JOIN SPRZEDAZ S2 on S.ID_SKLEPU = S2.ID_SKLEPU
   GROUP BY p.ID_PANSTWA, p.NAZWA
+);
+
+-- Zad. 4B
+SELECT
+  Typ_Reklamy,
+  Rok,
+  Wartosc,
+  Roznica_z_min
+FROM (
+  SELECT
+    tr.ID_TYPU,
+    tr.OPIS                                    as Typ_Reklamy,
+    NVL(TO_CHAR(c2.ROK), 'Podsumowanie TYPU:') as Rok,
+    SUM(R.WARTOSC_REKLAMY)                     as Wartosc,
+    SUM(R.WARTOSC_REKLAMY) - MIN(SUM(R.WARTOSC_REKLAMY))
+    OVER (
+      partition by tr.ID_TYPU
+      ) as Roznica_z_min
+  FROM TYP_REKLAMY tr
+    JOIN REKLAMA R on tr.ID_TYPU = R.ID_TYPU
+    JOIN CZAS C2 on R.ID_CZASU = C2.ID_CZASU
+  GROUP BY GROUPING SETS ((tr.ID_TYPU, tr.OPIS, c2.ROK), (tr.ID_TYPU, tr.OPIS))
+  ORDER BY tr.OPIS, SUM(R.WARTOSC_REKLAMY) ASC
 )
+
+-- Zad. 5B
