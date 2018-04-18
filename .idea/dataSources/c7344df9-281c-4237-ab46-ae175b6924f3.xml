@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@212.33.90.213 PB">
-  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.7">
-    <root id="1"/>
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.8">
+    <root id="1">
+      <ServerVersion>11.2.0.2</ServerVersion>
+    </root>
     <schema id="2" parent="1" name="MACIEJ_SAWICKI">
       <ObjectId>1353</ObjectId>
-      <IntrospectionTimestamp>2018-04-11.18:14:31</IntrospectionTimestamp>
-      <CreatedTimestamp>2018-03-01.23:24:31</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
-      <CommentsHash>365460353958619</CommentsHash>
+      <IntrospectionTimestamp>2018-04-18.18:05:23</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -1475,577 +1476,380 @@
     <schema id="490" parent="1" name="TEST2">
       <ObjectId>1513</ObjectId>
     </schema>
-    <table id="491" parent="2" name="CUSTOMER">
-      <ObjectId>344510</ObjectId>
-      <Comment>Table includes basic customer information</Comment>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
+    <schema id="491" parent="1" name="BURAK_OZKAN">
+      <ObjectId>1514</ObjectId>
+    </schema>
+    <table id="492" parent="2" name="CZAS">
+      <ObjectId>347720</ObjectId>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="492" parent="2" name="INVENTORY">
-      <ObjectId>344522</ObjectId>
-      <Comment>Inventory � what we have and where it is</Comment>
-      <CreatedTimestamp>2018-04-11.18:14:29</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
+    <table id="493" parent="2" name="KONTYNENT">
+      <ObjectId>347722</ObjectId>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="493" parent="2" name="ORDER_DETAILS">
-      <ObjectId>344518</ObjectId>
-      <Comment>Details of each order placed by a customer</Comment>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
+    <table id="494" parent="2" name="PANSTWO">
+      <ObjectId>347724</ObjectId>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="494" parent="2" name="PART">
-      <ObjectId>344516</ObjectId>
-      <Comment>Parts in inventory</Comment>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
+    <table id="495" parent="2" name="PRODUKT">
+      <ObjectId>347730</ObjectId>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="495" parent="2" name="PRODUCER">
-      <ObjectId>344514</ObjectId>
-      <Comment>Manufacturer of products/parts</Comment>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
+    <table id="496" parent="2" name="REKLAMA">
+      <ObjectId>347735</ObjectId>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="496" parent="2" name="REP">
-      <ObjectId>344508</ObjectId>
-      <Comment>Sales Representative table</Comment>
-      <CreatedTimestamp>2018-04-11.18:14:27</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:27</ModifiedTimestamp>
+    <table id="497" parent="2" name="SKLEP">
+      <ObjectId>347726</ObjectId>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="497" parent="2" name="T_ORDERS">
-      <ObjectId>344512</ObjectId>
-      <Comment>It has only the ID and date of an order placed by a customer</Comment>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
+    <table id="498" parent="2" name="SPRZEDAZ">
+      <ObjectId>347732</ObjectId>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="498" parent="2" name="WAREHOUSE">
-      <ObjectId>344520</ObjectId>
-      <Comment>Warehouse where we keep the inventory of products</Comment>
-      <CreatedTimestamp>2018-04-11.18:14:29</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
+    <table id="499" parent="2" name="TYP_PRODUKTU">
+      <ObjectId>347728</ObjectId>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="499" parent="491" name="CUSID">
+    <table id="500" parent="2" name="TYP_REKLAMY">
+      <ObjectId>347733</ObjectId>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="501" parent="492" name="ID_CZASU">
       <Position>1</Position>
-      <Comment>Customer identifier</Comment>
-      <DataType>CHAR(3)|0</DataType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="500" parent="491" name="CUS_NAME">
+    <column id="502" parent="492" name="MIESIAC">
       <Position>2</Position>
-      <Comment>Customer name</Comment>
-      <DataType>CHAR(35)|0</DataType>
+      <DataType>NUMBER(2 digit)|0s</DataType>
+    </column>
+    <column id="503" parent="492" name="ROK">
+      <Position>3</Position>
+      <DataType>NUMBER(4 digit)|0s</DataType>
+    </column>
+    <index id="504" parent="492" name="SYS_C00228622">
+      <ObjectId>347721</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CZASU</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="505" parent="492" name="SYS_C00228622">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_CZASU</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00228622</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="506" parent="493" name="ID_KONTYNENTU">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="501" parent="491" name="CUS_EMAIL">
+    <column id="507" parent="493" name="NAZWA">
+      <Position>2</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+    </column>
+    <index id="508" parent="493" name="SYS_C00228623">
+      <ObjectId>347723</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_KONTYNENTU</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="509" parent="493" name="SYS_C00228623">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_KONTYNENTU</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00228623</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="510" parent="494" name="ID_PANSTWA">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="511" parent="494" name="NAZWA">
+      <Position>2</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+    </column>
+    <column id="512" parent="494" name="KONTYNENT">
       <Position>3</Position>
-      <Comment>Customer email</Comment>
-      <DataType>CHAR(25)|0</DataType>
+      <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <column id="502" parent="491" name="PHONE">
+    <index id="513" parent="494" name="SYS_C00228624">
+      <ObjectId>347725</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PANSTWA</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="514" parent="494" name="SYS_C00228624">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_PANSTWA</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00228624</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="515" parent="494" name="SYS_C00228625">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>KONTYNENT</ColNames>
+      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
+      <RefTableName>KONTYNENT</RefTableName>
+      <RefKeyName>SYS_C00228623</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="516" parent="495" name="ID_PRODUKTU">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="517" parent="495" name="NAZWA">
+      <Position>2</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+    </column>
+    <column id="518" parent="495" name="TYP">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="519" parent="495" name="SYS_C00228629">
+      <ObjectId>347731</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PRODUKTU</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="520" parent="495" name="SYS_C00228629">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_PRODUKTU</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00228629</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="521" parent="495" name="SYS_C00228630">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>TYP</ColNames>
+      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
+      <RefTableName>TYP_PRODUKTU</RefTableName>
+      <RefKeyName>SYS_C00228628</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="522" parent="496" name="ID_CZASU">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="523" parent="496" name="ID_TYPU">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="524" parent="496" name="ID_PRODUKTU">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="525" parent="496" name="WARTOSC_REKLAMY">
       <Position>4</Position>
-      <Comment>Customer phone</Comment>
-      <DataType>CHAR(12)|0</DataType>
+      <DataType>NUMBER(10 digit)|0s</DataType>
     </column>
-    <column id="503" parent="491" name="STREET">
+    <foreign-key id="526" parent="496" name="SYS_C00228635">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_CZASU</ColNames>
+      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
+      <RefTableName>CZAS</RefTableName>
+      <RefKeyName>SYS_C00228622</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="527" parent="496" name="SYS_C00228636">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_TYPU</ColNames>
+      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
+      <RefTableName>TYP_REKLAMY</RefTableName>
+      <RefKeyName>SYS_C00228634</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="528" parent="496" name="SYS_C00228637">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_PRODUKTU</ColNames>
+      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
+      <RefTableName>PRODUKT</RefTableName>
+      <RefKeyName>SYS_C00228629</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="529" parent="497" name="ID_SKLEPU">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="530" parent="497" name="ULICA">
+      <Position>2</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+    </column>
+    <column id="531" parent="497" name="MIEJSCOWOSC">
+      <Position>3</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+    </column>
+    <column id="532" parent="497" name="WOJEWODZTWO">
+      <Position>4</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+    </column>
+    <column id="533" parent="497" name="PANSTWO">
       <Position>5</Position>
-      <Comment>Customer street address</Comment>
-      <DataType>CHAR(15)|0</DataType>
+      <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <column id="504" parent="491" name="CITY">
-      <Position>6</Position>
-      <Comment>Customer city</Comment>
-      <DataType>CHAR(15)|0</DataType>
-    </column>
-    <column id="505" parent="491" name="STATE">
-      <Position>7</Position>
-      <Comment>Customer state</Comment>
-      <DataType>CHAR(2)|0</DataType>
-      <DefaultExpression>&apos;PA&apos;</DefaultExpression>
-    </column>
-    <column id="506" parent="491" name="ZIP">
-      <Position>8</Position>
-      <Comment>Customer postal code</Comment>
-      <DataType>CHAR(5)|0</DataType>
-    </column>
-    <column id="507" parent="491" name="BALANCE">
-      <Position>9</Position>
-      <Comment>Customer balance � amount owed</Comment>
-      <DataType>NUMBER(8,2)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="508" parent="491" name="CREDIT_LIMIT">
-      <Position>10</Position>
-      <Comment>Customer credit limit</Comment>
-      <DataType>NUMBER(8,2)|0</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>2500  </DefaultExpression>
-    </column>
-    <column id="509" parent="491" name="REPID">
-      <Position>11</Position>
-      <Comment>ID of Rep assigned to the customer</Comment>
-      <DataType>CHAR(2)|0</DataType>
-    </column>
-    <index id="510" parent="491" name="CUSTOMER_CUSID_PK">
-      <ObjectId>344511</ObjectId>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
+    <index id="534" parent="497" name="SYS_C00228626">
+      <ObjectId>347727</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
-      <ColNames>CUSID</ColNames>
+      <ColNames>ID_SKLEPU</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="511" parent="491" name="CUSTOMER_CUSID_PK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>CUSID</ColNames>
+    <key id="535" parent="497" name="SYS_C00228626">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_SKLEPU</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>CUSTOMER_CUSID_PK</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00228626</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="512" parent="491" name="CUSTOMER_REPNUM_FK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>REPID</ColNames>
+    <foreign-key id="536" parent="497" name="SYS_C00228627">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>PANSTWO</ColNames>
       <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>REP</RefTableName>
-      <RefKeyName>REP_REPID_PK</RefKeyName>
+      <RefTableName>PANSTWO</RefTableName>
+      <RefKeyName>SYS_C00228624</RefKeyName>
       <OnDelete>restrict</OnDelete>
     </foreign-key>
-    <check id="513" parent="491" name="CUSTOMER_CUSNAME_NN">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>CUS_NAME</ColNames>
-      <Predicate>&quot;CUS_NAME&quot; IS NOT NULL</Predicate>
-    </check>
-    <check id="514" parent="491" name="CUSTOMER_BALANCE_CK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>BALANCE</ColNames>
-      <Predicate>balance &gt;= 0</Predicate>
-    </check>
-    <check id="515" parent="491" name="CUSTOMER_BALANCE_NN">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>BALANCE</ColNames>
-      <Predicate>&quot;BALANCE&quot; IS NOT NULL</Predicate>
-    </check>
-    <check id="516" parent="491" name="CUSTOMER_CREDITLIMIT_CK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>CREDIT_LIMIT</ColNames>
-      <Predicate>credit_limit &gt;= 0</Predicate>
-    </check>
-    <check id="517" parent="491" name="CUSTOMER_CREDITLIMIT_NN">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>CREDIT_LIMIT</ColNames>
-      <Predicate>&quot;CREDIT_LIMIT&quot; IS NOT NULL</Predicate>
-    </check>
-    <column id="518" parent="492" name="WAREHOUSE#">
+    <column id="537" parent="498" name="ID_CZASU">
       <Position>1</Position>
-      <Comment>ID of the Warehouse</Comment>
-      <DataType>CHAR(1)|0</DataType>
-      <NotNull>1</NotNull>
+      <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <column id="519" parent="492" name="PART#">
+    <column id="538" parent="498" name="ID_PRODUKTU">
       <Position>2</Position>
-      <Comment>ID of the part in the inventory</Comment>
-      <DataType>CHAR(4)|0</DataType>
-      <NotNull>1</NotNull>
+      <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <column id="520" parent="492" name="ON_HAND">
+    <column id="539" parent="498" name="ID_SKLEPU">
       <Position>3</Position>
-      <Comment>Number of copies of the part in the Inventory</Comment>
-      <DataType>NUMBER(4)|0</DataType>
+      <DataType>NUMBER(*)|0s</DataType>
     </column>
-    <column id="521" parent="492" name="MIN_QUANTITY">
+    <column id="540" parent="498" name="WARTOSC">
       <Position>4</Position>
-      <Comment>Minimum quantity before reorder</Comment>
-      <DataType>NUMBER(4)|0</DataType>
+      <DataType>NUMBER(12 digit)|0s</DataType>
     </column>
-    <column id="522" parent="492" name="NEXT_SUPPLY_DATE">
-      <Position>5</Position>
-      <Comment>Date of Next Reorder</Comment>
-      <DataType>DATE|0</DataType>
+    <foreign-key id="541" parent="498" name="SYS_C00228631">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_CZASU</ColNames>
+      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
+      <RefTableName>CZAS</RefTableName>
+      <RefKeyName>SYS_C00228622</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="542" parent="498" name="SYS_C00228632">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_PRODUKTU</ColNames>
+      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
+      <RefTableName>PRODUKT</RefTableName>
+      <RefKeyName>SYS_C00228629</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="543" parent="498" name="SYS_C00228633">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_SKLEPU</ColNames>
+      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
+      <RefTableName>SKLEP</RefTableName>
+      <RefKeyName>SYS_C00228626</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="544" parent="499" name="ID_TYPU">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <index id="523" parent="492" name="INVENTORY_PK">
-      <ObjectId>344523</ObjectId>
-      <CreatedTimestamp>2018-04-11.18:14:29</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
+    <column id="545" parent="499" name="OPIS">
+      <Position>2</Position>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
+    </column>
+    <index id="546" parent="499" name="SYS_C00228628">
+      <ObjectId>347729</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
-      <ColNames>WAREHOUSE#
-PART#</ColNames>
+      <ColNames>ID_TYPU</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="524" parent="492" name="INVENTORY_PK">
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
-      <ColNames>WAREHOUSE#
-PART#</ColNames>
+    <key id="547" parent="499" name="SYS_C00228628">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_TYPU</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>INVENTORY_PK</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00228628</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="525" parent="492" name="INVENTORY_WAREHOUSE#_FK">
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
-      <ColNames>WAREHOUSE#</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>WAREHOUSE</RefTableName>
-      <RefKeyName>WAREHOUSE_PK</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <foreign-key id="526" parent="492" name="INVENTORY_PART#_FK">
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
-      <ColNames>PART#</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>PART</RefTableName>
-      <RefKeyName>PART_PART#_PK</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <check id="527" parent="492" name="INVENTORY_ON_HAND_CK">
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
-      <ColNames>ON_HAND</ColNames>
-      <Predicate>On_Hand &gt;= 0</Predicate>
-    </check>
-    <check id="528" parent="492" name="INVENTORY_MIN_QTY_CK">
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
-      <ColNames>MIN_QUANTITY</ColNames>
-      <Predicate>Min_Quantity &gt;= 0</Predicate>
-    </check>
-    <column id="529" parent="493" name="ORDER#">
+    <column id="548" parent="500" name="ID_TYPU">
       <Position>1</Position>
-      <Comment>Identifier of the order</Comment>
-      <DataType>CHAR(5)|0</DataType>
+      <DataType>NUMBER(*)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="530" parent="493" name="PART#">
+    <column id="549" parent="500" name="OPIS">
       <Position>2</Position>
-      <Comment>ID of part on individual order line</Comment>
-      <DataType>CHAR(4)|0</DataType>
-      <NotNull>1</NotNull>
+      <DataType>VARCHAR2(30 byte)|0s</DataType>
     </column>
-    <column id="531" parent="493" name="NUM_ORDERED">
-      <Position>3</Position>
-      <Comment>Number of part ordered on the line</Comment>
-      <DataType>NUMBER(3)|0</DataType>
-    </column>
-    <column id="532" parent="493" name="QUOTED_PRICE">
-      <Position>4</Position>
-      <Comment>Quoted price at the time of the order</Comment>
-      <DataType>NUMBER(6,2)|0</DataType>
-    </column>
-    <index id="533" parent="493" name="ORDERDETAILS_PK">
-      <ObjectId>344519</ObjectId>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
+    <index id="550" parent="500" name="SYS_C00228634">
+      <ObjectId>347734</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-18.18:05:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
       <TablespaceName>USERS</TablespaceName>
-      <ColNames>ORDER#
-PART#</ColNames>
+      <ColNames>ID_TYPU</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="534" parent="493" name="ORDERDETAILS_PK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>ORDER#
-PART#</ColNames>
+    <key id="551" parent="500" name="SYS_C00228634">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-18.18:05:09</ModifiedTimestamp>
+      <ColNames>ID_TYPU</ColNames>
       <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>ORDERDETAILS_PK</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="535" parent="493" name="ORDERDETAILS_ORDER#_FK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>ORDER#</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>T_ORDERS</RefTableName>
-      <RefKeyName>ORDER_ORDER#_PK</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <foreign-key id="536" parent="493" name="ORDERDETAILS_PART#_FK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>PART#</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>PART</RefTableName>
-      <RefKeyName>PART_PART#_PK</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <column id="537" parent="494" name="PART#">
-      <Position>1</Position>
-      <Comment>Identifier of part/item/product</Comment>
-      <DataType>CHAR(4)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="538" parent="494" name="NAME">
-      <Position>2</Position>
-      <Comment>Description of the part</Comment>
-      <DataType>CHAR(15)|0</DataType>
-    </column>
-    <column id="539" parent="494" name="CLASS">
-      <Position>3</Position>
-      <Comment>Class of the part</Comment>
-      <DataType>CHAR(2)|0</DataType>
-    </column>
-    <column id="540" parent="494" name="PRICE">
-      <Position>4</Position>
-      <Comment>Price of the part</Comment>
-      <DataType>NUMBER(6,2)|0</DataType>
-    </column>
-    <column id="541" parent="494" name="P_NUM">
-      <Position>5</Position>
-      <Comment>ID of manufacturer</Comment>
-      <DataType>CHAR(4)|0</DataType>
-    </column>
-    <index id="542" parent="494" name="PART_PART#_PK">
-      <ObjectId>344517</ObjectId>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>PART#</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="543" parent="494" name="PART_PART#_PK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>PART#</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>PART_PART#_PK</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="544" parent="494" name="PART_PNUM_FK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>P_NUM</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>PRODUCER</RefTableName>
-      <RefKeyName>PRODUCER_PNUM_PK</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <check id="545" parent="494" name="PART_PRICE_CK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>PRICE</ColNames>
-      <Predicate>price &gt; 0</Predicate>
-    </check>
-    <column id="546" parent="495" name="P_NUM">
-      <Position>1</Position>
-      <Comment>Identifier of manufacturer</Comment>
-      <DataType>CHAR(4)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="547" parent="495" name="NAME">
-      <Position>2</Position>
-      <Comment>Name of manufacturer</Comment>
-      <DataType>CHAR(20)|0</DataType>
-    </column>
-    <column id="548" parent="495" name="PHONE">
-      <Position>3</Position>
-      <Comment>Manufacturer Phone</Comment>
-      <DataType>CHAR(12)|0</DataType>
-    </column>
-    <index id="549" parent="495" name="PRODUCER_PNUM_PK">
-      <ObjectId>344515</ObjectId>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>P_NUM</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="550" parent="495" name="PRODUCER_PNUM_PK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>P_NUM</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>PRODUCER_PNUM_PK</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="551" parent="496" name="REPID">
-      <Position>1</Position>
-      <Comment>Sales representative identifier</Comment>
-      <DataType>CHAR(2)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="552" parent="496" name="LAST_NAME">
-      <Position>2</Position>
-      <Comment>Last name of the representative</Comment>
-      <DataType>CHAR(15)|0</DataType>
-    </column>
-    <column id="553" parent="496" name="FIRST_NAME">
-      <Position>3</Position>
-      <Comment>First name of the representative</Comment>
-      <DataType>CHAR(15)|0</DataType>
-    </column>
-    <column id="554" parent="496" name="HIRE_DATE">
-      <Position>4</Position>
-      <Comment>Date when the rep started employment</Comment>
-      <DataType>DATE|0</DataType>
-    </column>
-    <column id="555" parent="496" name="STREET">
-      <Position>5</Position>
-      <Comment>Sales representative street address</Comment>
-      <DataType>CHAR(15)|0</DataType>
-    </column>
-    <column id="556" parent="496" name="CITY">
-      <Position>6</Position>
-      <Comment>Sales representative city</Comment>
-      <DataType>CHAR(15)|0</DataType>
-    </column>
-    <column id="557" parent="496" name="STATE">
-      <Position>7</Position>
-      <Comment>Sales representative state</Comment>
-      <DataType>CHAR(2)|0</DataType>
-    </column>
-    <column id="558" parent="496" name="ZIP">
-      <Position>8</Position>
-      <Comment>Sales representative postal code</Comment>
-      <DataType>CHAR(5)|0</DataType>
-    </column>
-    <column id="559" parent="496" name="COMMISSION">
-      <Position>9</Position>
-      <Comment>Total commission</Comment>
-      <DataType>NUMBER(7,2)|0</DataType>
-    </column>
-    <column id="560" parent="496" name="RATE">
-      <Position>10</Position>
-      <Comment>Commission rate</Comment>
-      <DataType>NUMBER(3,2)|0</DataType>
-    </column>
-    <index id="561" parent="496" name="REP_REPID_PK">
-      <ObjectId>344509</ObjectId>
-      <CreatedTimestamp>2018-04-11.18:14:27</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:27</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>REPID</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="562" parent="496" name="REP_REPID_PK">
-      <ModifiedTimestamp>2018-04-11.18:14:27</ModifiedTimestamp>
-      <ColNames>REPID</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>REP_REPID_PK</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <check id="563" parent="496" name="REP_COMMISSION_CK">
-      <ModifiedTimestamp>2018-04-11.18:14:27</ModifiedTimestamp>
-      <ColNames>COMMISSION</ColNames>
-      <Predicate>commission &gt;= 0</Predicate>
-    </check>
-    <column id="564" parent="497" name="ORDER#">
-      <Position>1</Position>
-      <Comment>Order ID number</Comment>
-      <DataType>CHAR(5)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="565" parent="497" name="ORDER_DATE">
-      <Position>2</Position>
-      <Comment>Date of the order</Comment>
-      <DataType>DATE|0</DataType>
-    </column>
-    <column id="566" parent="497" name="SHIP_DATE">
-      <Position>3</Position>
-      <Comment>Date of shipping the order</Comment>
-      <DataType>DATE|0</DataType>
-    </column>
-    <column id="567" parent="497" name="STATUS">
-      <Position>4</Position>
-      <Comment>Status of the Order</Comment>
-      <DataType>CHAR(8)|0</DataType>
-      <DefaultExpression>&apos;Open&apos;</DefaultExpression>
-    </column>
-    <column id="568" parent="497" name="PAY_METHOD">
-      <Position>5</Position>
-      <Comment>Payment method</Comment>
-      <DataType>CHAR(5)|0</DataType>
-      <DefaultExpression>&apos;Card&apos;</DefaultExpression>
-    </column>
-    <column id="569" parent="497" name="REPID">
-      <Position>6</Position>
-      <Comment>ID of REP who processed the order</Comment>
-      <DataType>CHAR(2)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="570" parent="497" name="CUSID">
-      <Position>7</Position>
-      <Comment>ID of customer who placed the order</Comment>
-      <DataType>CHAR(3)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="571" parent="497" name="ORDER_ORDER#_PK">
-      <ObjectId>344513</ObjectId>
-      <CreatedTimestamp>2018-04-11.18:14:28</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>ORDER#</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="572" parent="497" name="ORDER_ORDER#_PK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>ORDER#</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>ORDER_ORDER#_PK</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="573" parent="497" name="ORDER_REPID_FK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>REPID</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>REP</RefTableName>
-      <RefKeyName>REP_REPID_PK</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <foreign-key id="574" parent="497" name="ORDER_CUSID_FK">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>CUSID</ColNames>
-      <RefSchemaName>MACIEJ_SAWICKI</RefSchemaName>
-      <RefTableName>CUSTOMER</RefTableName>
-      <RefKeyName>CUSTOMER_CUSID_PK</RefKeyName>
-      <OnDelete>restrict</OnDelete>
-    </foreign-key>
-    <check id="575" parent="497" name="ORDER_REPID_NN">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>REPID</ColNames>
-      <Predicate>&quot;REPID&quot; IS NOT NULL</Predicate>
-    </check>
-    <check id="576" parent="497" name="ORDER_CUSID_NN">
-      <ModifiedTimestamp>2018-04-11.18:14:28</ModifiedTimestamp>
-      <ColNames>CUSID</ColNames>
-      <Predicate>&quot;CUSID&quot; IS NOT NULL</Predicate>
-    </check>
-    <column id="577" parent="498" name="WAREHOUSE#">
-      <Position>1</Position>
-      <Comment>ID of the warehouse</Comment>
-      <DataType>CHAR(1)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="578" parent="498" name="LOCATION">
-      <Position>2</Position>
-      <Comment>Name of city where the warehouse is located</Comment>
-      <DataType>VARCHAR2(15)|0</DataType>
-    </column>
-    <column id="579" parent="498" name="PHONE">
-      <Position>3</Position>
-      <Comment>Phone number to the warehouse</Comment>
-      <DataType>VARCHAR2(12)|0</DataType>
-    </column>
-    <column id="580" parent="498" name="MNGR_NAME">
-      <Position>4</Position>
-      <Comment>First and Last name of the manager</Comment>
-      <DataType>VARCHAR2(15)|0</DataType>
-    </column>
-    <column id="581" parent="498" name="NUM_EMPLOYEES">
-      <Position>5</Position>
-      <Comment>Number of employees working at the location</Comment>
-      <DataType>NUMBER(4)|0</DataType>
-    </column>
-    <column id="582" parent="498" name="AREA">
-      <Position>6</Position>
-      <Comment>Area (sqr Feet) of the warehouse</Comment>
-      <DataType>NUMBER(7,1)|0</DataType>
-    </column>
-    <index id="583" parent="498" name="WAREHOUSE_PK">
-      <ObjectId>344521</ObjectId>
-      <CreatedTimestamp>2018-04-11.18:14:29</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
-      <TablespaceName>USERS</TablespaceName>
-      <ColNames>WAREHOUSE#</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="584" parent="498" name="WAREHOUSE_PK">
-      <ModifiedTimestamp>2018-04-11.18:14:29</ModifiedTimestamp>
-      <ColNames>WAREHOUSE#</ColNames>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <UnderlyingIndexName>WAREHOUSE_PK</UnderlyingIndexName>
+      <UnderlyingIndexName>SYS_C00228634</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
   </database-model>
