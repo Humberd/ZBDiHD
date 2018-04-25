@@ -1,0 +1,59 @@
+
+-- task 4
+db.Film.update({
+	tytul: "Kopciuszek"
+ },{
+	$push: {
+		oceny: {
+			$each: [
+				{
+	 				ocena: 5.8,
+	 				data: new Date()
+	 			}, {
+	 				ocena: 7.4,
+	 				data: new Date()
+	 			}
+			],
+			$sort: { data: -1 },
+			$slice: 3
+		}
+	},
+}, {
+	multi: true
+})
+
+-- task 5
+db.Film.update({
+	tytul: "Kopciuszek"
+ },{
+	$set: {
+	 	rodzaj: ["animowany", "bajka"]
+	}
+})
+
+-- task 6
+db.Film.aggregate({
+	$group: {
+		_id: "$rok_produkcji",
+		ilosc: { $sum: 1 }
+	}
+})
+
+-- task 7
+db.Film.aggregate(
+{
+  $unwind: "$producent"
+},
+{
+	$group: {
+		_id: "$producent.nazwa",
+		ilosc: { $sum: 1 }
+	}
+})
+
+-- task 8
+db.Film.remove({
+	ocena: {
+		$lt: 2
+	}
+})
